@@ -2,15 +2,33 @@
 
 This is a Git Style Guide inspired by [*Git Style Guide*](https://github.com/agis-/git-style-guide).
 
-If you're new to Git, read through this page first [Git The Simple Guide] (http://rogerdudler.github.io/git-guide/)
+If you're new to Git, read through this page first [*Git The Simple Guide*] (http://rogerdudler.github.io/git-guide/)
 
 # Table of contents
 
-1. [Branches](#branches)
-2. [Commits](#commits)
+1. Pull/Fetch/Rebase
+2. [Branches](#branches)
+3. [Commits](#commits)
   1. [Messages](#messages)
-3. [Merging](#merging)
-4. [Misc.](#misc)
+4. [Merging](#merging)
+5. [Misc.](#misc)
+
+## Pull/Fetch/Rebase
+* if you're working on master or a team branch
+```shell
+  $ git fetch
+  $ git rebase
+ ```
+ the first gets the remote changes.
+ the second rewinds your code to the remote head and then applies your changes.
+ 
+* if you're working on your own branch  
+  ```shell
+  $ git pull
+  $ git merge 
+ ```
+Make sure you're up to date with a pull
+then when ready merge your branch into master with a merge
 
 ## Branches
 
