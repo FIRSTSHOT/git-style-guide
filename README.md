@@ -1,27 +1,8 @@
 # Git Style Guide
 
-This is a Git Style Guide inspired by [*How to Get Your Change Into the Linux
-Kernel*](https://kernel.org/doc/html/latest/process/submitting-patches.html),
-the [git man pages](http://git-scm.com/doc) and various practices popular
-among the community.
+This is a Git Style Guide inspired by [*Git Style Guide*](https://github.com/agis-/git-style-guide).
 
-Translations are available in the following languages:
-
-* [Chinese (Simplified)](https://github.com/aseaday/git-style-guide)
-* [Chinese (Traditional)](https://github.com/JuanitoFatas/git-style-guide)
-* [French](https://github.com/pierreroth64/git-style-guide)
-* [German](https://github.com/runjak/git-style-guide)
-* [Greek](https://github.com/grigoria/git-style-guide)
-* [Japanese](https://github.com/objectx/git-style-guide)
-* [Korean](https://github.com/ikaruce/git-style-guide)
-* [Portuguese](https://github.com/guylhermetabosa/git-style-guide)
-* [Spanish](https://github.com/alexsimo/git-style-guide)
-* [Thai](https://github.com/zondezatera/git-style-guide)
-* [Turkish](https://github.com/CnytSntrk/git-style-guide)
-* [Ukrainian](https://github.com/denysdovhan/git-style-guide)
-
-If you feel like contributing, please do so! Fork the project and open a pull
-request.
+If you're new to Git, read through this page first [Git The Simple Guide] (http://rogerdudler.github.io/git-guide/)
 
 # Table of contents
 
@@ -34,13 +15,14 @@ request.
 ## Branches
 
 * Choose *short* and *descriptive* names:
+use your initials followed by a dash and the branch name
 
   ```shell
   # good
-  $ git checkout -b oauth-migration
+  $ git checkout -b ab-oauth-migration
 
   # bad - too vague
-  $ git checkout -b login_fix
+  $ git checkout -b om-login_fix
   ```
 
 * Identifiers from corresponding tickets in an external service (eg. a GitHub
